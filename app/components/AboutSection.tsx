@@ -6,7 +6,7 @@ import {
   Stethoscope,
 } from "lucide-react";
 
-const AboutSection = (): JSX.Element => {
+const AboutSection = () => {
   return (
     <section className={styles.about}>
       <div className={styles.container}>
