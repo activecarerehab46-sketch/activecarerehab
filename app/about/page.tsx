@@ -68,14 +68,14 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Lead Therapist */}
+       {/* Lead Therapist */}
         <section className={styles.therapist}>
           <div className={styles.container}>
             <div className={styles.therapistGrid}>
               <div className={styles.imageBox}>
                 <Image
                   src="/images/Hero_image.png"
-                  alt="Dr Shurtika"
+                  alt="Lead Physiotherapist"
                   width={500}
                   height={600}
                 />
@@ -83,36 +83,34 @@ export default function AboutPage() {
 
               <div>
                 <span className={styles.sectionTag}>
-                  LEAD PHYSIOTHERAPIST
+                  PROFESSIONAL PHYSIOTHERAPY CARE
                 </span>
 
-                <h2>Dr. Shurtika</h2>
+                <h2>HCPC & CSP Registered Physiotherapist</h2>
 
                 <p>
-                  Dr. Shurtika is a dedicated HCPC registered
-                  physiotherapist committed to delivering
-                  evidence-based care, personalised
-                  rehabilitation programmes, and long-term
-                  recovery solutions.
+                  Receive expert assessment, treatment, and rehabilitation
+                  from a fully qualified physiotherapist committed to
+                  delivering evidence-based care and personalised recovery
+                  plans tailored to your individual needs.
                 </p>
 
                 <p>
-                  Through comprehensive assessment,
-                  hands-on therapy, and tailored rehabilitation
-                  plans, Dr. Shurtika helps patients achieve
-                  lasting improvements in movement, function,
-                  and wellbeing.
+                  Using a combination of hands-on therapy, exercise
+                  rehabilitation, and patient education, treatment is
+                  focused on reducing pain, restoring movement, improving
+                  function, and supporting long-term wellbeing.
                 </p>
 
                 <div className={styles.credentials}>
                   <div>
-                    <strong>HCPC Registration</strong>
-                    <span>PH135242</span>
+                    <strong>HCPC Registered</strong>
+                    <span>100% Verified</span>
                   </div>
 
                   <div>
-                    <strong>CSP Membership</strong>
-                    <span>118500</span>
+                    <strong>CSP Member</strong>
+                    <span>Fully Accredited</span>
                   </div>
                 </div>
               </div>

@@ -14,7 +14,7 @@ export default function StatsSection() {
           <FaUserMd />
         </div>
 
-        <h3>10+</h3>
+        <h3>4+</h3>
         <p>Years Experience</p>
       </div>
 
@@ -23,7 +23,7 @@ export default function StatsSection() {
           <FaHeartbeat />
         </div>
 
-        <h3>5000+</h3>
+        <h3>500+</h3>
         <p>Successful Treatments</p>
       </div>
 

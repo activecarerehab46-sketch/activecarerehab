@@ -111,3 +111,24 @@
     display: none;
   }
 }
+.consultationBtn {
+  background: #c99622;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.consultationBtn:hover {
+  background: #b5851e;
+  transform: translateY(-2px);
+}
+@media (max-width: 768px) {
+  .consultationBtn {
+    display: none;
+  }
+}

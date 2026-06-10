@@ -100,7 +100,27 @@ setFormData({
       "Something went wrong. Please try again."
     );
   }
+  const age = Number(formData.age);
+
+if (age < 0 || age > 120) {
+  alert("Please enter a valid age.");
+  return;
+}
+
+if (
+  new Date(formData.visitDate) <
+  new Date(new Date().toISOString().split("T")[0])
+) {
+  alert("Appointment date cannot be in the past.");
+  return;
+}
+
+if (!consent) {
+  alert("Please accept the GDPR consent.");
+  return;
+}
 };
+const [consent, setConsent] = useState(false);
   if (!isOpen) return null;
 
   return (
@@ -146,6 +166,9 @@ setFormData({
                 name="firstName"
                 value={formData.firstName}
                 onChange={handleChange}
+                pattern="^[A-Za-z\s'-]{2,50}$"
+                minLength={2}
+                maxLength={50}
                 required
               />
             </div>
@@ -155,14 +178,17 @@ setFormData({
                 Last Name *
               </label>
 
-              <input
-                id="lastName"
-                type="text"
-                name="lastName"
-                value={formData.lastName}
-                onChange={handleChange}
-                required
-              />
+            <input
+              id="lastName"
+              type="text"
+              name="lastName"
+              value={formData.lastName}
+              onChange={handleChange}
+              pattern="^[A-Za-z\s'-]{2,50}$"
+              minLength={2}
+              maxLength={50}
+              required
+            />
             </div>
           </div>
 
@@ -173,13 +199,13 @@ setFormData({
               <label htmlFor="email">
                 Email Address *
               </label>
-
               <input
                 id="email"
                 type="email"
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
+                maxLength={100}
                 required
               />
             </div>
@@ -189,14 +215,16 @@ setFormData({
                 Phone Number *
               </label>
 
-              <input
-                id="phone"
-                type="tel"
-                name="phone"
-                value={formData.phone}
-                onChange={handleChange}
-                required
-              />
+             <input
+            id="phone"
+            type="tel"
+            name="phone"
+            value={formData.phone}
+            onChange={handleChange}
+            pattern="^(\+44|0)[1-9]\d{8,10}$"
+            title="Enter a valid UK phone number"
+            required
+          />
             </div>
           </div>
 
@@ -207,13 +235,13 @@ setFormData({
               <label htmlFor="dob">
                 Date of Birth *
               </label>
-
               <input
                 id="dob"
                 type="date"
                 name="dob"
                 value={formData.dob}
                 onChange={handleChange}
+                max={new Date().toISOString().split("T")[0]}
                 required
               />
             </div>
@@ -223,15 +251,17 @@ setFormData({
                 Age *
               </label>
 
-              <input
+             <input
                 id="age"
                 type="number"
                 name="age"
                 value={formData.age}
                 onChange={handleChange}
+                min="0"
+                max="120"
                 required
               />
-            </div>
+                          </div>
           </div>
 
           {/* Gender */}
@@ -278,14 +308,15 @@ setFormData({
                 Preferred Appointment Date *
               </label>
 
-              <input
-                id="visitDate"
-                type="date"
-                name="visitDate"
-                value={formData.visitDate}
-                onChange={handleChange}
-                required
-              />
+            <input
+              id="visitDate"
+              type="date"
+              name="visitDate"
+              value={formData.visitDate}
+              onChange={handleChange}
+              min={new Date().toISOString().split("T")[0]}
+              required
+            />
             </div>
 
             <div className={styles.field}>
@@ -349,55 +380,50 @@ setFormData({
               onChange={handleChange}
               required
             >
-              <option value="">
-                Select Treatment
-              </option>
+            
+          <option value="">Select Treatment</option>
+          <option value="sports-massage">Sports Massage</option>
+          <option value="acupuncture-dry-needling">Acupuncture / Dry Needling</option>
+          <option value="cupping">Cupping</option>
+          <option value="electrotherapy">Electrotherapy</option>
+          <option value="physiotherapy">Physiotherapy</option>
+          <option value="prp-therapy">PRP Therapy</option>
 
-              <option>
-                Physiotherapy Assessment
-              </option>
-
-              <option>
-                Sports Injury Rehabilitation
-              </option>
-
-              <option>
-                Back Pain Treatment
-              </option>
-
-              <option>
-                Neck Pain Treatment
-              </option>
-
-              <option>
-                Post Surgery Recovery
-              </option>
-
-              <option>
-                Massage Therapy
-              </option>
-
-              <option>
-                Mobility & Strength Training
-              </option>
             </select>
           </div>
 
           {/* Symptoms */}
 
           <div className={styles.field}>
-            <label htmlFor="message">
-              Describe Your Symptoms
-            </label>
+                        
+              <label htmlFor="message">
+                Additional Information
+              </label>
 
-            <textarea
-              id="message"
-              name="message"
-              rows={4}
-              value={formData.message}
-              onChange={handleChange}
-              placeholder="Describe your symptoms, pain area, injury, or reason for consultation..."
+              <textarea
+                id="message"
+                name="message"
+                rows={4}
+                value={formData.message}
+                onChange={handleChange}
+                placeholder="Enter any additional information, questions, or special requests..."
+              />
+
+          </div>
+
+          <div className={styles.checkbox}>
+            <input
+              type="checkbox"
+              id="consent"
+              checked={consent}
+              onChange={(e) => setConsent(e.target.checked)}
+              required
             />
+
+            <label htmlFor="consent">
+              I consent to Active Care Rehab storing my
+              information in accordance with UK GDPR.
+            </label>
           </div>
 
           <button

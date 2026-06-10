@@ -50,7 +50,7 @@ export default function Hero() {
               </button>
 
               <a
-                href="tel:+442079460950"
+                href="tel:+4407428624224"
                 className={styles.secondaryBtn}
               >
                 <Phone size={18} />

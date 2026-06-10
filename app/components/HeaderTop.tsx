@@ -24,9 +24,20 @@ export default function HeaderTop() {
         </div>
 
         <div className={styles.right}>
-          <a href="tel:+442079460950" className={styles.item}>
+          <a href="tel:+4407428624224" className={styles.item}>
             <Phone size={14} />
-            <span>020 7946 0950</span>
+            <span> 
+                07428624224
+          
+             </span>
+          </a>
+          <a href="tel:+4407459014019" className={styles.item}>
+            <Phone size={14} />
+            <span> 
+           
+              
+                07459014019
+             </span>
           </a>
 
           <a
@@ -37,16 +48,23 @@ export default function HeaderTop() {
             <span>info@activecarerehab.co.uk</span>
           </a>
 
+          <a
+            href="/contact"
+            className={styles.consultationBtn}
+          >
+            ✓ Free 20-Min Consultation
+          </a>
+
           <div className={styles.socials}>
-            <a href="https://facebook.com" target="_blank">
+            <a href="https://facebook.com" target="_blank" rel="noreferrer">
               <FaFacebookF />
             </a>
 
-            <a href="https://instagram.com" target="_blank">
+            <a href="https://instagram.com" target="_blank" rel="noreferrer">
               <FaInstagram />
             </a>
 
-            <a href="https://google.com" target="_blank">
+            <a href="https://google.com" target="_blank" rel="noreferrer">
               <FaGoogle />
             </a>
           </div>

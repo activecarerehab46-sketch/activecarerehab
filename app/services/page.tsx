@@ -131,73 +131,141 @@ export default function ServicesPage() {
 
     {/* CARD 3 */}
 
-    <div className={styles.serviceCardReverse}>
-      <div className={styles.contentSide}>
-        <span className={styles.cardTag}>
-          NATURAL HEALING
-        </span>
+          <div className={styles.serviceCardReverse}>
+            <div className={styles.contentSide}>
+              <span className={styles.cardTag}>
+                PAIN RELIEF & RECOVERY
+              </span>
 
-        <h3>Cupping Therapy</h3>
+              <h3>Acupuncture / Dry Needling</h3>
 
-        <p>
-          Modern cupping techniques designed to
-          improve circulation, relieve muscle
-          tightness and promote healing.
-        </p>
+              <p>
+                Target trigger points and muscle tension using precise needle
+                techniques designed to reduce pain, improve movement and
+                accelerate recovery.
+              </p>
 
-        <ul>
-          <li>Improved Blood Flow</li>
-          <li>Pain Reduction</li>
-          <li>Muscle Recovery</li>
-          <li>Stress Relief</li>
-        </ul>
-      </div>
+              <ul>
+                <li>Trigger Point Release</li>
+                <li>Pain Reduction</li>
+                <li>Improved Mobility</li>
+                <li>Muscle Relaxation</li>
+              </ul>
+            </div>
 
-      <div className={styles.imageSide}>
-        <Image
-          src="/images/cupping.png"
-          alt="Cupping Therapy"
-          width={600}
-          height={400}
-        />
-      </div>
-    </div>
+            <div className={styles.imageSide}>
+              <Image
+                src="/images/Acupuncture-Dry-Needling.png"
+                alt="Acupuncture Dry Needling"
+                width={600}
+                height={400}
+              />
+            </div>
+          </div>
 
-    {/* CARD 4 */}
+          {/* CARD 4 */}
 
-    <div className={styles.serviceCardReverse}>
-      <div className={styles.contentSide}>
-        <span className={styles.cardTag}>
-          RELAXATION & WELLNESS
-        </span>
+          <div className={styles.serviceCard}>
+            <div className={styles.imageSide}>
+              <Image
+                src="/images/cupping.png"
+                alt="Cupping Therapy"
+                width={600}
+                height={400}
+              />
+            </div>
 
-        <h3>Massage Therapy</h3>
+            <div className={styles.contentSide}>
+              <span className={styles.cardTag}>
+                NATURAL PAIN RELIEF
+              </span>
 
-        <p>
-          Professional massage therapy that helps
-          reduce stress, improve mobility and
-          support overall wellbeing.
-        </p>
+              <h3>Cupping Therapy</h3>
 
-        <ul>
-          <li>Stress Reduction</li>
-          <li>Better Mobility</li>
-          <li>Muscle Relaxation</li>
-          <li>Improved Wellbeing</li>
-        </ul>
-      </div>
+              <p>
+                Cupping therapy helps improve blood circulation, relieve muscle
+                tension and promote natural healing by creating gentle suction on
+                targeted areas of the body.
+              </p>
 
-      <div className={styles.imageSide}>
-        <Image
-          src="/images/massage.png"
-          alt="Massage Therapy"
-          width={600}
-          height={400}
-        />
-      </div>
-    </div>
-  </div>
-</section>
+              <ul>
+                <li>Improved Blood Flow</li>
+                <li>Reduced Muscle Tightness</li>
+                <li>Pain Relief</li>
+                <li>Enhanced Recovery</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* CARD 4 */}
+
+          <div className={styles.serviceCard}>
+            <div className={styles.imageSide}>
+              <Image
+                src="/images/Electrotherapy.png"
+                alt="Electrotherapy"
+                width={600}
+                height={400}
+              />
+            </div>
+
+            <div className={styles.contentSide}>
+              <span className={styles.cardTag}>
+                ADVANCED PAIN MANAGEMENT
+              </span>
+
+              <h3>Electrotherapy</h3>
+
+              <p>
+                Advanced electrical stimulation treatments that help reduce pain,
+                improve circulation and support faster rehabilitation and recovery.
+              </p>
+
+              <ul>
+                <li>Pain Relief</li>
+                <li>Muscle Stimulation</li>
+                <li>Improved Blood Flow</li>
+                <li>Faster Recovery</li>
+              </ul>
+            </div>
+          </div>
+
+            {/* CARD 3 */}
+
+              <div className={styles.serviceCardReverse}>
+                <div className={styles.contentSide}>
+                  <span className={styles.cardTag}>
+                    REGENERATIVE MEDICINE
+                  </span>
+
+                  <h3>PRP Therapy</h3>
+
+                  <p>
+                    PRP (Platelet-Rich Plasma) therapy uses the healing properties
+                    found in your own blood to support tissue repair, reduce
+                    inflammation and promote natural recovery.
+                  </p>
+
+                  <ul>
+                    <li>Natural Treatment Using Your Own Blood</li>
+                    <li>Reduces Pain & Inflammation</li>
+                    <li>Promotes Healing & Tissue Repair</li>
+                    <li>Supports Arthritis Management</li>
+                  </ul>
+                </div>
+
+                <div className={styles.imageSide}>
+                  <Image
+                    src="/images/prp.png"
+                    alt="PRP Therapy"
+                    width={600}
+                    height={400}
+                  />
+                </div>
+              </div>
+              
+            </div>
+          </section>
         {/* FEATURES */}
 
         <section className={styles.features}>
@@ -302,6 +370,8 @@ export default function ServicesPage() {
                   a safe recovery.
                 </p>
               </div>
+
+              
             </div>
           </div>
         </section>

@@ -234,7 +234,8 @@ export default function ContactPage() {
                     <h4>Phone Number</h4>
 
                     <p>
-                      020 7946 0950
+                     07428624224
+                     , 07459014019
                     </p>
                   </div>
                 </div>
@@ -287,10 +288,12 @@ export default function ContactPage() {
             </h2>
 
             <iframe
-              src="https://maps.google.com/maps?q=Milton%20Keynes&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2453.1078155352525!2d-0.8561968238370298!3d52.05956047021755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4877019d9ffcfb9b%3A0xa006eb4ce9d23116!2s1%20Ostlers%20Ln%2C%20Stony%20Stratford%2C%20Milton%20Keynes%20MK11%201AR%2C%20UK!5e0!3m2!1sen!2sin!4v1781067023211!5m2!1sen!2sin"
               loading="lazy"
               allowFullScreen
             />
+            
+
           </div>
         </section>
 
