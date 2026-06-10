@@ -110,7 +110,7 @@ export default function BlogPage() {
 
               <div className={styles.card}>
                 <Image
-                  src="/images/electrotherapy.png"
+                  src="/images/Electrotherapy.png"
                   alt="Electrotherapy"
                   width={500}
                   height={300}
