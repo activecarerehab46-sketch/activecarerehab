@@ -25,6 +25,7 @@ export default function Hero() {
     <>
       <section className={styles.hero}>
         <div className={styles.container}>
+          
           {/* LEFT */}
           <div className={styles.left}>
             <h1>

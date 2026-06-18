@@ -132,10 +132,13 @@ export default function Navbar() {
 
           <li>
             <Link
-              href="/conditions"
+              href="/membership"
               onClick={() => setMenuOpen(false)}
             >
-              Conditions
+                
+              Membership / Packages
+            
+
             </Link>
           </li>
 
