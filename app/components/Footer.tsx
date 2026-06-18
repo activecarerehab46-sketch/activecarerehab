@@ -77,6 +77,16 @@ export default function Footer() {
                   Contact Us
                 </Link>
               </li>
+                <li>
+                <Link href="/membership">
+                  Membership
+                </Link>
+              </li>
+                <li>
+                <Link href="/membership">
+                  Packages
+                </Link>
+              </li>
             </ul>
           </div>
 

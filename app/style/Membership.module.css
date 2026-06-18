@@ -1,0 +1,292 @@
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* HERO */
+
+.hero {
+  position: relative;
+  min-height: 750px;
+
+  background:url("/images/membership.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+}
+
+
+/* SECTIONS */
+
+.section {
+  padding: 110px 0;
+}
+
+.membership {
+  padding: 110px 0;
+  background: #f7f9fc;
+}
+
+.heading {
+  text-align: center;
+  color: #0b2a52;
+  font-size: 46px;
+  margin-bottom: 70px;
+}
+
+/* GRID */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+}
+
+/* PACKAGE CARDS */
+
+.card {
+  background: white;
+  border-radius: 25px;
+  padding: 40px;
+  box-shadow: 0 15px 40px rgba(0,0,0,.08);
+  position: relative;
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.discount {
+  background: #d8a545;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 14px;
+}
+
+.popular {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+
+  background: #0b2a52;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 13px;
+}
+
+.card h3 {
+  color: #0b2a52;
+  margin: 25px 0 15px;
+}
+
+.card h4 {
+  color: #d8a545;
+  margin-bottom: 25px;
+}
+
+.card ul {
+  padding: 0;
+}
+
+.card li {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 18px;
+  color: #666;
+}
+
+/* MEMBERSHIP CARDS */
+
+.memberCard {
+  background: white;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(0,0,0,.08);
+  transition: .3s;
+}
+
+.memberCard:hover {
+  transform: translateY(-10px);
+}
+
+.memberTitle {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.memberTitle svg {
+  color: #d8a545;
+}
+
+.memberTitle h3 {
+  color: #0b2a52;
+}
+
+.memberCard p {
+  margin-bottom: 25px;
+  color: #666;
+}
+
+.memberCard ul {
+  padding: 0;
+}
+
+.memberCard li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  color: #666;
+}
+
+/* FAQ */
+
+.faq {
+  max-width: 900px;
+  margin: auto;
+}
+
+.faq details {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 25px rgba(0,0,0,.05);
+}
+
+.faq summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #0b2a52;
+}
+
+.faq p {
+  margin-top: 15px;
+  color: #666;
+  line-height: 1.7;
+}
+
+/* RESPONSIVE */
+.hero {
+  position: relative;
+  background: url("/images/membership.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 750px;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: 450px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .heading {
+    font-size: 38px;
+  }
+
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .hero {
+    height: 180px;
+    min-height: unset;
+
+    background-image: url("/images/membership.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+  .heading {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card,
+  .memberCard {
+    padding: 30px;
+  }
+
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+
+  .hero {
+    height: 150px;
+    min-height: unset;
+
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+
+  .card,
+  .memberCard {
+    padding: 25px;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .hero {
+    width: 100%;
+    height: 250px; /* adjust as needed */
+
+    background-image: url("/images/membership.png");
+    background-size: cover; /* Fill entire section */
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    min-height: unset;
+  }
+
+}
+@media (max-width: 480px) {
+
+  .hero {
+    height: 180px;
+    background-size: cover;
+    background-position: center center;
+  }
+
+}

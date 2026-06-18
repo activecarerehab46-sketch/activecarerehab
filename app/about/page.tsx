@@ -74,7 +74,7 @@ export default function AboutPage() {
             <div className={styles.therapistGrid}>
               <div className={styles.imageBox}>
                 <Image
-                  src="/images/Hero_image.png"
+                  src="/images/certified.png"
                   alt="Lead Physiotherapist"
                   width={500}
                   height={600}

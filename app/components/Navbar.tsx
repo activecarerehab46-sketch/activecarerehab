@@ -42,7 +42,7 @@ export default function Navbar() {
             </li>
 
             <li>
-              <Link href="/conditions">Conditions</Link>
+              <Link href="/membership">Membership / Packages</Link>
             </li>
 
             <li>
